@@ -1,0 +1,62 @@
+/* Style cho body */
+body {
+    background-color: #87d58b; /* Chọn màu nền tùy thích */
+}
+
+/* Style cho container (khung form) */
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/* Style cho các trường nhập */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.input-container label,
+.input-container input,
+.input-container textarea {
+    width: 100%;
+}
+
+/* Style cho nút "Submit" */
+.submit-wrapper {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.submit-wrapper button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-wrapper button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Baloo 2', cursive; /* Sử dụng font chữ Baloo 2 */
+    font-size: 4rem; /* Điều chỉnh kích thước font theo ý muốn */
+    color: black;
+}
+
+.success-message {
+    display: none;
+    color: rgb(225, 225, 32); /* Đổi màu chữ thành màu vàng */
+    margin-top: 10px;
+}

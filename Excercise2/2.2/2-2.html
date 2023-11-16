@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="2-2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Student Form</h1>
+    <div class="container">
+        <form>
+            <!-- Input First Name -->
+            <div class="input-container">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <!-- Input Last Name -->
+            <div class="input-container">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <!-- Input Email -->
+            <div class="input-container">
+                <label for="email">Email *</label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <!-- Input Phone Number -->
+            <div class="input-container">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <!-- Input Student ID -->
+            <div class="input-container">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId">
+            </div>
+
+            <!-- Input Message -->
+            <div class="input-container">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" style="height: 100px;"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-wrapper">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="success-message" id="successMessage" style="display: none;">Your information has been submitted successfully!</div>
+    </div>
+    <script src="sucess.js"></script>
+</body>
+
+</html>
