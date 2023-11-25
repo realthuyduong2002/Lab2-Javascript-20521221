@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(73, 109, 160);
+    margin-top: 5px;
+}
+
+h1 {
+    font-family: 'Baloo 2', cursive;
+    color: #000000;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    font-size: 72px;
+}
+
+.center-image {
+    vertical-align: middle;
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(73, 109, 160);
+    color: white;
+}
+
+.key {
+    transition: all .07s ease;
+    width: 7rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 .5rem black;
+    margin-right: 45px;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.sound {
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
+
+.key img {
+    border: 0.4rem solid black;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+}

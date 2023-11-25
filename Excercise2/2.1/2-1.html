@@ -15,23 +15,15 @@
     <label for="email">Email: </label>
     <input type="text" id="email"><br><br>
 
+    <button id="submitButton">Submit</button>
+
     <script>
-        // Create a button element
-        const submitButton = document.createElement('button');
+        const submitButton = document.getElementById('submitButton');
 
-        // Set the type attribute for the button to "submit"
-        submitButton.setAttribute('type', 'submit');
-
-        // Set the default content for the button
-        submitButton.textContent = 'Submit';
-
-        // Add the button to the webpage body
-        document.body.appendChild(submitButton);
-
-        // Change the content of the button after a certain period
-        setTimeout(function () {
-            submitButton.textContent = 'Submit';
-        }, 2000);
+        submitButton.addEventListener('click', function () {
+            // Change to "Submitted"
+            submitButton.textContent = 'Submitted';
+        });
     </script>
 </body>
 

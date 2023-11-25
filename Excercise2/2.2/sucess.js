@@ -1,7 +1,15 @@
-document.querySelector('form').addEventListener('submit', function(event) {
-    // Ngăn chặn hành vi mặc định của form (tránh làm trang web load lại)
-    event.preventDefault();
+// Lấy đối tượng button submit
+const submitButton = document.querySelector('.submit-wrapper button');
 
+// Gắn sự kiện 'submit' vào form
+document.querySelector('form').addEventListener('submit', function(event) {
+    // Ngăn chặn việc gửi form đi (để không load lại trang)
+    event.preventDefault();
+    
+    // Thay đổi nội dung của nút thành 'Submitted'
+    submitButton.textContent = 'Submitted';
+    
     // Hiển thị thông báo thành công
-    document.getElementById('successMessage').style.display = 'block';
+    const successMessage = document.getElementById('successMessage');
+    successMessage.style.display = 'block';
 });
