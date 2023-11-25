@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Submit Button</title>
+</head>
+
+<body>
+    <label for="name">Name: </label>
+    <input type="text" id="name"><br><br>
+
+    <label for="phone">Phone Number: </label>
+    <input type="text" id="phone"><br><br>
+
+    <label for="email">Email: </label>
+    <input type="text" id="email"><br><br>
+
+    <button id="submitButton">Submit</button>
+
+    <script>
+        const submitButton = document.getElementById('submitButton');
+
+        submitButton.addEventListener('click', function () {
+            // Change to "Submitted"
+            submitButton.textContent = 'Submitted';
+        });
+    </script>
+</body>
+
+</html>
